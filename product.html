@@ -12,17 +12,17 @@
   </head>
   <body>
     <!-- Navbar on every page -->
-    <nav>
+    <nav class="flex justify-between p-4">
       <div onclick="location.href='index.html'">
-        <h1>The Music Store</h1>
+        <h1 class="text-2xl font-bold">The Music Store</h1>
       </div>
       <div>
-        <ul>
+        <ul class="flex space-x-4">
           <li>
             <a href="contact.html">Contact Us</a>
           </li>
           <li>
-            <a href="about.html">About Us</a>
+            <a href="#">About Us</a>
           </li>
           <li>
             <a href="#">Login | Signup</a>
@@ -144,19 +144,19 @@
     </main>
 
     <!-- Footer on every page -->
-    <footer>
-      <div>
-        <h2>The Music Store</h2>
-        <ul>
+    <footer class="flex flex-col justify-center items-center lg:items-start">
+      <div class="p-6 flex flex-col justify-center items-center lg:items-start lg:justify-start">
+        <h2 class="text-xl font-bold">The Music Store</h2>
+        <ul class="flex flex-col justify-center items-center lg:items-start lg:justify-start space-y-2">
           <li>
             <a href="contact.html">Contact Us</a>
           </li>
           <li>
-            <a href="about.html">About Us</a>
+            <a href="#">About Us</a>
           </li>
         </ul>
       </div>
-      <p>&copy; 2024 The Music Store. All rights reserved.</p>
+      <p class="p-6 self-center lg:self-end">&copy; 2024 The Music Store. All rights reserved.</p>
     </footer>
   </body>
 </html>
