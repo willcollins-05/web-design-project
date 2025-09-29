@@ -12,12 +12,12 @@
   </head>
   <body>
     <!-- Navbar on every page -->
-    <nav>
+    <nav class="flex justify-between p-4">
       <div onclick="location.href='index.html'">
-        <h1>The Music Store</h1>
+        <h1 class="text-2xl font-bold">The Music Store</h1>
       </div>
       <div>
-        <ul>
+        <ul class="flex space-x-4">
           <li>
             <a href="contact.html">Contact Us</a>
           </li>
@@ -33,50 +33,56 @@
 
     <main>
       <!-- Image Scroller -->
-      <div>
-        <span class="material-icons">chevron_left</span>
+      <div class="relative w-full h-96">
+        <span class="material-icons absolute top-1/2 left-4 -translate-y-1/2">chevron_left</span>
         <img
           src="./images/GuitarOnFloor.jpg"
           alt="Image of a guitar laying on the floor"
-          height="650"
+          class="w-full h-full object-cover"
         />
-        <span class="material-icons">chevron_right</span>
+        <span class="material-icons absolute top-1/2 right-4 -translate-y-1/2">chevron_right</span>
       </div>
-      <div>
-        <h2>Recommended Products</h2>
-        <div>
-          <div>
+      <div class="flex flex-col m-6 ">
+        <h2 class="text-xl font-bold underline">Recommended Products</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center">
+          <div class="flex flex-col p-6 max-w-sm lg:max-w-4xl">
             <img
               src="./images/acousticGuitar.webp"
               alt="Image of an acoustic guitar"
-              height="256"
+              class="self-center w-60 h-auto"
             />
-            <h3>Acoustic Guitar</h3>
-            <h4>$259.99</h4>
-            <button>See Product Page</button>
+            <h3 class="text-lg font-semibold">Acoustic Guitar</h3>
+            <div class="flex justify-between items-center">
+              <h4>$259.99</h4>
+              <button>See Product Page</button>
+            </div>
           </div>
-          <div>
+          <div class="hidden lg:flex lg:flex-col p-6 max-w-sm lg:max-w-4xl">
             <img
               src="./images/bassGuitar.webp"
               alt="Image of a bass guitar"
-              height="256"
+              class="self-center w-60 h-auto"
             />
-            <h3>Electric Bass</h3>
-            <h4>$1,499.00</h4>
-            <button>See Product Page</button>
+            <h3 class="text-lg font-semibold">Electric Bass</h3>
+            <div class="flex justify-between items-center">
+              <h4>$1,499.00</h4>
+              <button>See Product Page</button>
+            </div>
           </div>
-          <div>
+          <div class="hidden lg:flex lg:flex-col p-6 max-w-sm lg:max-w-4xl">
             <img
               src="./images/electricGuitar.webp"
               alt="Image of an electric guitar"
-              height="256"
+              class="self-center w-60 h-auto"
             />
-            <h3>Electric Guitar</h3>
-            <h4>$1,999.99</h4>
-            <button>See Product Page</button>
+            <h3 class="text-lg font-semibold">Electric Guitar</h3>
+            <div class="flex justify-between items-center">
+              <h4>$1,999.99</h4>
+              <button>See Product Page</button>
+            </div>
           </div>
         </div>
-        <div>
+        <div class="self-center">
           <!-- Style this link like a button -->
           <a href="product.html">See All Products</a>
         </div>
@@ -84,10 +90,10 @@
     </main>
 
     <!-- Footer on every page -->
-    <footer>
-      <div>
-        <h2>The Music Store</h2>
-        <ul>
+    <footer class="flex flex-col justify-center items-center lg:items-start">
+      <div class="p-6 flex flex-col justify-center items-center lg:items-start lg:justify-start">
+        <h2 class="text-xl font-bold">The Music Store</h2>
+        <ul class="flex flex-col justify-center items-center lg:items-start lg:justify-start space-y-2">
           <li>
             <a href="contact.html">Contact Us</a>
           </li>
@@ -96,7 +102,7 @@
           </li>
         </ul>
       </div>
-      <p>&copy; 2024 The Music Store. All rights reserved.</p>
+      <p class="p-6 self-center lg:self-end">&copy; 2024 The Music Store. All rights reserved.</p>
     </footer>
   </body>
 </html>
