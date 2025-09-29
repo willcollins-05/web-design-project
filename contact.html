@@ -4,63 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Music Store - Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/navbar_controls.js" defer></script>
   </head>
   <body>
     <!-- Navbar on every page -->
     <nav class="flex justify-between p-4">
-      <div onclick="location.href='index.html'">
-        <h1 class="text-2xl font-bold">The Music Store</h1>
+      <div onclick="location.href='index.html'" class="cursor-pointer">
+        <h1 class="text-xl lg:text-2xl font-bold whitespace-nowrap">
+          The Music Store
+        </h1>
       </div>
-      <div>
-        <ul class="flex space-x-4">
+      <div class="flex items-center">
+        <button
+          id="menu-btn"
+          class="lg:hidden"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <i class="material-icons" id="menu-icon">menu</i>
+        </button>
+        <ul id="nav-links" class="flex space-x-4 hidden lg:flex">
           <li>
             <a href="contact.html">Contact Us</a>
           </li>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Login | Signup</a>
-          </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Login | Signup</a></li>
         </ul>
       </div>
     </nav>
 
     <main>
-        <h2>Contact Us</h2>
-        <form action="#">
-            <div>
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name..." required>
-            </div>
-            <div>
-                <label for="email">Email Address</label>
-                <input type="email" name="email" id="email" placeholder="Email Address..." required>
-            </div>
-            <div>
-                <label for="phone">Phone Number</label>
-                <input type="text" name="phone" id="phone" placeholder="Phone Number...">
-            </div>
-            <div>
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="Subject..." required>
-            </div>
-            <div>
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Message..."></textarea>
-            </div>
-            <div>
-                <button type="submit">Submit Message</button>
-            </div>
-        </form>
+      <h2>Contact Us</h2>
+      <form action="#">
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name..."
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address..."
+            required
+          />
+        </div>
+        <div>
+          <label for="phone">Phone Number</label>
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Phone Number..."
+          />
+        </div>
+        <div>
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Subject..."
+            required
+          />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message..."
+          ></textarea>
+        </div>
+        <div>
+          <button type="submit">Submit Message</button>
+        </div>
+      </form>
     </main>
 
     <!-- Footer on every page -->
     <footer class="flex flex-col justify-center items-center lg:items-start">
-      <div class="p-6 flex flex-col justify-center items-center lg:items-start lg:justify-start">
+      <div
+        class="p-6 flex flex-col justify-center items-center lg:items-start lg:justify-start"
+      >
         <h2 class="text-xl font-bold">The Music Store</h2>
-        <ul class="flex flex-col justify-center items-center lg:items-start lg:justify-start space-y-2">
+        <ul
+          class="flex flex-col justify-center items-center lg:items-start lg:justify-start space-y-2"
+        >
           <li>
             <a href="contact.html">Contact Us</a>
           </li>
@@ -69,7 +112,9 @@
           </li>
         </ul>
       </div>
-      <p class="p-6 self-center lg:self-end">&copy; 2024 The Music Store. All rights reserved.</p>
+      <p class="p-6 self-center lg:self-end">
+        &copy; 2024 The Music Store. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>

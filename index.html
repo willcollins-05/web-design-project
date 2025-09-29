@@ -7,26 +7,34 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/navbar_controls.js" defer></script>
     <title>The Music Store</title>
   </head>
   <body>
     <!-- Navbar on every page -->
     <nav class="flex justify-between p-4">
-      <div onclick="location.href='index.html'">
-        <h1 class="text-2xl font-bold">The Music Store</h1>
+      <div onclick="location.href='index.html'" class="cursor-pointer">
+        <h1 class="text-xl lg:text-2xl font-bold whitespace-nowrap">
+          The Music Store
+        </h1>
       </div>
-      <div>
-        <ul class="flex space-x-4">
+      <div class="flex items-center">
+        <button
+          id="menu-btn"
+          class="lg:hidden"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <i class="material-icons" id="menu-icon">menu</i>
+        </button>
+        <ul id="nav-links" class="flex space-x-4 hidden lg:flex">
           <li>
             <a href="contact.html">Contact Us</a>
           </li>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Login | Signup</a>
-          </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Login | Signup</a></li>
         </ul>
       </div>
     </nav>
@@ -34,15 +42,19 @@
     <main>
       <!-- Image Scroller -->
       <div class="relative w-full h-96">
-        <span class="material-icons absolute top-1/2 left-4 -translate-y-1/2">chevron_left</span>
+        <span class="material-icons absolute top-1/2 left-4 -translate-y-1/2"
+          >chevron_left</span
+        >
         <img
           src="./images/GuitarOnFloor.jpg"
           alt="Image of a guitar laying on the floor"
           class="w-full h-full object-cover"
         />
-        <span class="material-icons absolute top-1/2 right-4 -translate-y-1/2">chevron_right</span>
+        <span class="material-icons absolute top-1/2 right-4 -translate-y-1/2"
+          >chevron_right</span
+        >
       </div>
-      <div class="flex flex-col m-6 ">
+      <div class="flex flex-col m-6">
         <h2 class="text-xl font-bold underline">Recommended Products</h2>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 place-items-center">
           <div class="flex flex-col p-6 max-w-sm lg:max-w-4xl">
@@ -91,9 +103,13 @@
 
     <!-- Footer on every page -->
     <footer class="flex flex-col justify-center items-center lg:items-start">
-      <div class="p-6 flex flex-col justify-center items-center lg:items-start lg:justify-start">
+      <div
+        class="p-6 flex flex-col justify-center items-center lg:items-start lg:justify-start"
+      >
         <h2 class="text-xl font-bold">The Music Store</h2>
-        <ul class="flex flex-col justify-center items-center lg:items-start lg:justify-start space-y-2">
+        <ul
+          class="flex flex-col justify-center items-center lg:items-start lg:justify-start space-y-2"
+        >
           <li>
             <a href="contact.html">Contact Us</a>
           </li>
@@ -102,7 +118,9 @@
           </li>
         </ul>
       </div>
-      <p class="p-6 self-center lg:self-end">&copy; 2024 The Music Store. All rights reserved.</p>
+      <p class="p-6 self-center lg:self-end">
+        &copy; 2024 The Music Store. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>

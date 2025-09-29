@@ -5,28 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/navbar_controls.js" defer></script>
     <title>The Music Store - Products</title>
   </head>
   <body>
     <!-- Navbar on every page -->
     <nav class="flex justify-between p-4">
-      <div onclick="location.href='index.html'">
-        <h1 class="text-2xl font-bold">The Music Store</h1>
+      <div onclick="location.href='index.html'" class="cursor-pointer">
+        <h1 class="text-xl lg:text-2xl font-bold whitespace-nowrap">
+          The Music Store
+        </h1>
       </div>
-      <div>
-        <ul class="flex space-x-4">
+      <div class="flex items-center">
+        <button
+          id="menu-btn"
+          class="lg:hidden"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <i class="material-icons" id="menu-icon">menu</i>
+        </button>
+        <ul id="nav-links" class="flex space-x-4 hidden lg:flex">
           <li>
             <a href="contact.html">Contact Us</a>
           </li>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Login | Signup</a>
-          </li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Login | Signup</a></li>
         </ul>
       </div>
     </nav>
@@ -90,64 +98,83 @@
         </div>
 
         <div>
-            <p>Showing 3 Results</p>
+          <p>Showing 3 Results</p>
+          <div>
             <div>
-                <div>
-                    <img src="./images/acousticGuitar.webp" alt="Image of an acoustic guitar" height="256"/>
-                </div>
-                <div>
-                    <div>
-                        <h3>Acoustic Guitar</h3>
-                        <h4>$259.99</h4>
-                        <p>A warm sounding acoustic guitar made with maple wood.</p>
-                    </div>
-                    <div>
-                        <button>Buy it Now</button>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
+              <img
+                src="./images/acousticGuitar.webp"
+                alt="Image of an acoustic guitar"
+                height="256"
+              />
             </div>
             <div>
-                <div>
-                    <img src="./images/bassGuitar.webp" alt="Image of a bass guitar" height="256"/>
-                </div>
-                <div>
-                    <div>
-                        <h3>Bass Guitar</h3>
-                        <h4>$1,499.00</h4>
-                        <p>An electric bass with a large sound.</p>
-                    </div>
-                    <div>
-                        <button>Buy it Now</button>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
+              <div>
+                <h3>Acoustic Guitar</h3>
+                <h4>$259.99</h4>
+                <p>A warm sounding acoustic guitar made with maple wood.</p>
+              </div>
+              <div>
+                <button>Buy it Now</button>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="./images/bassGuitar.webp"
+                alt="Image of a bass guitar"
+                height="256"
+              />
             </div>
             <div>
-                <div>
-                    <img src="./images/electricGuitar.webp" alt="Image of an electric guitar" height="256"/>
-                </div>
-                <div>
-                    <div>
-                        <h3>Electric Guitar</h3>
-                        <h4>$1,999.99</h4>
-                        <p>A powerful sounding electric guitar with state-of-the-art pickups.</p>
-                    </div>
-                    <div>
-                        <button>Buy it Now</button>
-                        <button>Add to Cart</button>
-                    </div>
-                </div>
+              <div>
+                <h3>Bass Guitar</h3>
+                <h4>$1,499.00</h4>
+                <p>An electric bass with a large sound.</p>
+              </div>
+              <div>
+                <button>Buy it Now</button>
+                <button>Add to Cart</button>
+              </div>
             </div>
+          </div>
+          <div>
+            <div>
+              <img
+                src="./images/electricGuitar.webp"
+                alt="Image of an electric guitar"
+                height="256"
+              />
+            </div>
+            <div>
+              <div>
+                <h3>Electric Guitar</h3>
+                <h4>$1,999.99</h4>
+                <p>
+                  A powerful sounding electric guitar with state-of-the-art
+                  pickups.
+                </p>
+              </div>
+              <div>
+                <button>Buy it Now</button>
+                <button>Add to Cart</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
     <!-- Footer on every page -->
     <footer class="flex flex-col justify-center items-center lg:items-start">
-      <div class="p-6 flex flex-col justify-center items-center lg:items-start lg:justify-start">
+      <div
+        class="p-6 flex flex-col justify-center items-center lg:items-start lg:justify-start"
+      >
         <h2 class="text-xl font-bold">The Music Store</h2>
-        <ul class="flex flex-col justify-center items-center lg:items-start lg:justify-start space-y-2">
+        <ul
+          class="flex flex-col justify-center items-center lg:items-start lg:justify-start space-y-2"
+        >
           <li>
             <a href="contact.html">Contact Us</a>
           </li>
@@ -156,7 +183,9 @@
           </li>
         </ul>
       </div>
-      <p class="p-6 self-center lg:self-end">&copy; 2024 The Music Store. All rights reserved.</p>
+      <p class="p-6 self-center lg:self-end">
+        &copy; 2024 The Music Store. All rights reserved.
+      </p>
     </footer>
   </body>
 </html>
