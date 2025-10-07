@@ -2,4 +2,5 @@
     background-image: url('../images/GuitarOnFloor.jpg');
     background-size: cover;
     background-position: center;
+    filter: grayscale(100%);
 }
