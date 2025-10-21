@@ -10,7 +10,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url('../images/GuitarOnFloor.jpg') center/cover no-repeat;
+    background: url('../images/GuitarOnFloor_577.webp') center/cover no-repeat;
     filter: grayscale(100%);
     z-index: -1;
 }
@@ -18,8 +18,6 @@
 .no-grayscale {
     filter: grayscale(0%);
 }
-
-
 
 /* If I was using tailwind without the cdn I would create these color profiles in the config for tailwind */
 

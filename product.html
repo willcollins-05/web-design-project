@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -11,9 +13,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./scripts/navbar_controls.js" defer></script>
+    <script src="./scripts/navbar_controls.js" async></script>
     <title>The Music Store - Products</title>
   </head>
   <body>
@@ -87,7 +90,7 @@
               step="10"
               class="w-full h-2 bg-purple rounded-lg appearance-none cursor-pointer"
             />
-            <div class="flex justify-between text-sm text-gray-300">
+            <div class="flex justify-between text-sm text-off-white">
               <span>$259.99</span>
               <span>$1,999.99</span>
             </div>
@@ -95,12 +98,12 @@
 
           <div class="mb-6">
             <p class="text-lg font-semibold mb-2">Rating</p>
-            <div class="flex text-xl text-green">
+            <div class="flex text-xl ">
               <span>★</span>
               <span>★</span>
               <span>★</span>
-              <span class="text-gray-400">★</span>
-              <span class="text-gray-400">★</span>
+              <span class="text-off-white">★</span>
+              <span class="text-off-white">★</span>
             </div>
           </div>
 
@@ -133,16 +136,18 @@
                   ./images/acousticGuitar.webp    500w,
                   ./images/acousticGuitar_50.webp 250w
                 "
-                sizes="(max-width: 600px) 250px, 500px"
-                src="./images/acousticGuitar.webp"
+                width="192"
+                height="192"
+                sizes="128px"
+                src="./images/acousticGuitar_50.webp"
                 alt="Image of an acoustic guitar"
                 class="w-48 h-48 object-contain shadow rounded-md"
               />
               <div class="flex flex-col justify-between">
                 <div>
-                  <h3 class="text-xl font-semibold text-green font-body">Acoustic Guitar</h3>
-                  <h4 class="text-lg font-bold text-green font-body">$259.99</h4>
-                  <p class="mt-1 text-green font-body">
+                  <h2 class="text-xl font-semibold  font-body">Acoustic Guitar</h2>
+                  <h2 class="text-lg font-bold  font-body">$259.99</h2>
+                  <p class="mt-1  font-body">
                     A warm sounding acoustic guitar made with maple wood.
                   </p>
                 </div>
@@ -161,16 +166,18 @@
                   ./images/bassGuitar.webp    500w,
                   ./images/bassGuitar_50.webp 250w
                 "
-                sizes="(max-width: 600px) 250px, 500px"
-                src="./images/bassGuitar.webp"
+                width="192"
+                height="192"
+                sizes="128px"
+                src="./images/bassGuitar_50.webp"
                 alt="Image of a bass guitar"
                 class="w-48 h-48 object-contain shadow rounded-md"
               />
               <div class="flex flex-col justify-between">
                 <div>
-                  <h3 class="text-xl font-semibold text-green font-body">Electric Bass</h3>
-                  <h4 class="text-lg font-bold text-green font-body">$1,499.99</h4>
-                  <p class="mt-1 text-green font-body">An electric bass with a large sound.</p>
+                  <h2 class="text-xl font-semibold  font-body">Electric Bass</h2>
+                  <h3 class="text-lg font-bold  font-body">$1,499.99</h3>
+                  <p class="mt-1  font-body">An electric bass with a large sound.</p>
                 </div>
                 <div class="flex gap-3 mt-3">
                   <button class="px-4 py-2 bg-purple font-body rounded-md font-bold">Buy It Now</button>
@@ -187,22 +194,24 @@
                   ./images/electricGuitar.webp    466w,
                   ./images/electricGuitar_50.webp 233w
                 "
-                sizes="(max-width: 600px) 233px, 466px"
-                src="./images/electricGuitar.webp"
+                width="192"
+                height="192"
+                sizes="119px"
+                src="./images/electricGuitar_50.webp"
                 alt="Image of an electric guitar"
                 class="w-48 h-48 object-contain shadow rounded-md"
               />
               <div class="flex max-w-full flex-col justify-between overflow-x-auto">
                 <div>
-                  <h3 class="text-xl font-semibold text-green font-body">Electric Guitar</h3>
-                  <h4 class="text-lg font-bold text-green font-body">$1,999.99</h4>
-                  <p class="mt-1 text-green font-body">
+                  <h2 class="text-xl font-semibold  font-body">Electric Guitar</h2>
+                  <h3 class="text-lg font-bold  font-body">$1,999.99</h3>
+                  <p class="mt-1  font-body">
                     A powerful sounding electric guitar with state-of-the-art
                     pickups.
                   </p>
                   <div class="my-4 overflow-x-auto">
                     <table class="min-w-full text-sm text-left border">
-                      <thead class="text-green">
+                      <thead class="">
                         <tr class="border-b">
                           <th class="px-4 py-2">Body Material</th>
                           <th class="px-4 py-2">Neck</th>
@@ -253,7 +262,7 @@
           </li>
         </ul>
       </div>
-      <p class="p-6 self-center lg:self-end text-gray-300">
+      <p class="p-6 self-center lg:self-end text-off-white">
         &copy; 2025 The Music Store. All rights reserved.
       </p>
     </footer>

@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./scripts/navbar_controls.js" defer></script>
+    <script src="./scripts/navbar_controls.js" async></script>
     <title>The Music Store</title>
   </head>
   <body>
@@ -47,11 +49,15 @@
         >
         <img
           srcset="
-            ./images/GuitarOnFloor_50.jpg 2000w,
-            ./images/GuitarOnFloor_25.jpg 1000w
+            ./images/GuitarOnFloor_577.webp  577w,
+            ./images/GuitarOnFloor_1010.webp 1010w,
+            ./images/GuitarOnFloor_1260.webp 1260w,
+            ./images/GuitarOnFloor_1470.webp 1470w,
+            ./images/GuitarOnFloor_1920.webp 1920w,
           "
-          sizes="(max-width: 600px) 1000px, 2000px"
+          sizes="(max-width: 619px) 552px, 100vw"
           alt="Image of a guitar laying on the floor"
+          src="./images/GuitarOnFloor_577.webp"
           class="w-full h-full object-cover"
         />
         <span class="material-icons absolute top-1/2 right-4 -translate-y-1/2"
@@ -64,42 +70,42 @@
           <div class="flex flex-col p-6 max-w-sm lg:max-w-4xl shadow-lg">
             <img
               srcset="./images/acousticGuitar.webp 500w, ./images/acousticGuitar_50.webp 250w"
-              sizes="(max-width: 600px) 250px, 500px"
-              src="./images/acousticGuitar.webp"
+              sizes="(min-width: 360px) 240px, calc(90vw - 66px)"
+              src="./images/acousticGuitar_50.webp"
               alt="Image of an acoustic guitar"
               class="self-center w-60 h-auto"
             />
-            <h3 class="text-lg font-semibold font-body text-green">Acoustic Guitar</h3>
+            <h3 class="text-lg font-semibold font-body">Acoustic Guitar</h3>
             <div class="flex justify-between items-center">
-              <h4 class="font-body text-green">$259.99</h4>
+              <h4 class="font-body">$259.99</h4>
               <button class="bg-purple font-body p-2 rounded-md font-bold">See Product Page</button>
             </div>
           </div>
           <div class="hidden lg:flex lg:flex-col p-6 max-w-sm lg:max-w-4xl shadow-lg">
             <img
               srcset="./images/bassGuitar.webp 500w, ./images/bassGuitar_50.webp 250w"
-              sizes="(max-width: 600px) 250px, 500px"
-              src="./images/bassGuitar.webp"
+              sizes="240px"
+              src="./images/bassGuitar_50.webp"
               alt="Image of a bass guitar"
               class="self-center w-60 h-auto"
             />
-            <h3 class="text-lg font-semibold font-body text-green">Electric Bass</h3>
+            <h3 class="text-lg font-semibold font-body">Electric Bass</h3>
             <div class="flex justify-between items-center">
-              <h4 class="font-body text-green">$1,499.00</h4>
+              <h4 class="font-body">$1,499.00</h4>
               <button class="bg-purple font-body p-2 rounded-md font-bold">See Product Page</button>
             </div>
           </div>
           <div class="hidden lg:flex lg:flex-col p-6 max-w-sm lg:max-w-4xl shadow-lg">
             <img
               srcset="./images/electricGuitar.webp 466w, ./images/electricGuitar_50.webp 233w"
-              sizes="(max-width: 600px) 233px, 466px"
-              src="./images/electricGuitar.webp"
+              sizes="240px"
+              src="./images/electricGuitar_50.webp"
               alt="Image of an electric guitar"
               class="self-center w-60 h-auto"
             />
-            <h3 class="text-lg font-semibold font-body text-green">Electric Guitar</h3>
+            <h3 class="text-lg font-semibold font-body">Electric Guitar</h3>
             <div class="flex justify-between items-center ">
-              <h4 class="font-body text-green">$1,999.99</h4>
+              <h4 class="font-body">$1,999.99</h4>
               <button class="bg-purple font-body p-2 rounded-md font-bold">See Product Page</button>
             </div>
           </div>
@@ -128,7 +134,7 @@
           </li>
         </ul>
       </div>
-      <p class="p-6 self-center lg:self-end text-gray-300">
+      <p class="p-6 self-center lg:self-end text-off-white">
         &copy; 2025 The Music Store. All rights reserved.
       </p>
     </footer>
