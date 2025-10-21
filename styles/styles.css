@@ -1,8 +1,21 @@
 .background-image {
-    background-image: url('../images/GuitarOnFloor.jpg');
     background-size: cover;
     background-position: center;
+    z-index: 0;
+    position: relative;
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('../images/GuitarOnFloor.jpg') center/cover no-repeat;
     filter: grayscale(100%);
+    z-index: -1;
+}
+
+.no-grayscale {
+    filter: grayscale(0%);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
